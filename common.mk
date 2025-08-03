@@ -243,10 +243,6 @@ $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/batt_slate_mode)
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
-PRODUCT_PACKAGES += \
-    dlopen \
-    dlopen.vendor
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
