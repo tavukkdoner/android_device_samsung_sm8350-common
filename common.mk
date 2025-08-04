@@ -308,7 +308,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnfc-nci \
     libnfc_nci_jni \
-    NfcNci \
     Tag
 
 PRODUCT_COPY_FILES += \
