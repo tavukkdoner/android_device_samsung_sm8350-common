@@ -77,6 +77,10 @@ BOARD_KERNEL_SEPARATED_DTBO  := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4        := true
 
+# Kernel Clang Flags
+KERNEL_CC := CC=clang
+override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
+
 # Kernel: mkbootimgs args
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
